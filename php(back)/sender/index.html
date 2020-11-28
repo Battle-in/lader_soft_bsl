@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <div class="slideMenu hide">
+            <div class="slideMenu__links">
+                <a href="https://bsl-show.ru/sender/">Написать</a>
+                <a href="https://bsl-show.ru/sender/msg.html">Сообщения</a>
+            </div>
+    </div>
+    <div class="wrapper">
+        <div class="menu ">
+            <img src="icon/menu.svg" alt="">
+        </div>
+
+            <form action="" class="mail" onsubmit=" request(); return false;">
+                   
+                    <input type="text" placeholder="Кому" name="to" required autocomplete='off'>
+                    <input type="text" placeholder="От кого" name="from" required autocomplete='off'>
+                    <input type="text" placeholder="Заголовок письма" name="title" required autocomplete='off'>
+                    <input type="text" placeholder="Текст письма" name="text" required autocomplete='off'>
+                    <input type="submit" placeholder="SEND">
+            </form>
+            <footer></footer>
+    </div>
+    <script src="script/lib/req.js"></script>
+    <script src="script/index.js"></script>
+</body>
+</html>
